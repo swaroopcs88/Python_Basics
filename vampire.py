@@ -1,4 +1,4 @@
-name = 'Alllice'
+name = 'Alice'
 age = 13
 if name == 'Alice':
     print('Hi, ' + name)
