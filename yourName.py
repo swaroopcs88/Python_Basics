@@ -1,3 +1,4 @@
+# variable name is declared empty
 name = ''
 while name != 'your name':
     print('Please type your name.')
