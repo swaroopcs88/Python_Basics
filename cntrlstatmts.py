@@ -1,23 +1,29 @@
-"""
+"""example1
 # to find area of the circle
 import math # here math module is imported
 r = float(input('Enter radius: '))
 area = math.pi*r**2 # pi is a constant in math module
 print('Area of circle= ', area)
 print('Area of circle= {:0.2f}'.format(area))
+"""
 
+"""example2
 # understanding the if statement
 num = 1
 if num == 1:
     print("One")
+"""
 
+"""example3
 # understanding if statement
 str = 'Yes'
 if str == 'Yes':
     print("Yes")
     print("That's what you said")
     print("Your are awesome!")
+"""
 
+"""example4
 # understanding indentation
 x, y = 0, 2
 if x == 1:
@@ -27,23 +33,28 @@ if x == 1:
         print('c')
         print('d')
 print('end')
+"""
 
+"""example5
 # to know if a given number is even or odd
 x = 8 # 3, 5, 7, 8, 4
 if x % 2 == 0:
     print(x, " is even number")
 else:
     print(x, " is odd number")
+"""
 
-
+"""example6
 # using 'and' in if ... else statement
 x = int(input('Enter a number: '))
 if x >= 1 and x <= 10:
     print("You typed", x, "which is between 1 and 10")
 else:
     print("You typed", x, "Which is below 1 or above 10")
+"""
 
 
+"""example7
 # to know if a given number is zero or +ve or -ve
 num = -87 # 4, 66, 31, -87
 if num == 0:
@@ -52,25 +63,27 @@ elif num > 0:
     print(num, "is positive")
 else:
     print(num, "is negative")
-    
+"""
 
+"""example8
 # to display numbers from 1 to 10
 x = 1
 while x<= 10:
     print(x)
     x += 1
 print('End')
+"""
 
-
+"""example9
 # to display even numbers between 100 and 200
 
 x = 100
 while x >= 100 and x <= 200:
     print(x)
     x += 2
-    
+"""    
 
-
+"""example10
 # python program to display even numbers between m and n
 
 m, n = [int(i) for i in input("Enter minimum and maximum range: ").split(',')]
@@ -83,16 +96,17 @@ if x % 2 != 0: # if x is not even, start from next number
 while x >= m and x <= n:
     print(x)
     x += 2
-    
+"""    
 
-
+"""example11
 # to display each character from string
 
 str7 = 'Hello'
 for ch in str7:
     print(ch)
+"""
 
-
+"""example12
 # to display each character from string - v2
 
 str8 = 'How are you'
@@ -100,24 +114,25 @@ n = len(str8) # find number of characters in str
 print('Length of string is ' +str(n))
 for i in range(n):
     print(str8[i])
+"""
 
-
+"""example13
 # to display odd numbers between 1 and 10
 
 for i in range(1, 10, 2):
     print(i)
+"""
 
-
-
+"""example14
 # display elements of a list using for loop
 list = [10, 20.5, 'America', 'India', 'Chair', 'Door']
 # display each element from the list
 for item in list:
     print(item)
+"""
 
 
-
-
+"""example15
 # to find the sum of list of numbers using for
 # take a list of numbers
 
@@ -128,10 +143,9 @@ for i in list1:
     print(i)
     sum += i
 print('Sum = ', sum)
-
-
 """
 
+"""example16
 # to find sum of list of numbers using while - v2
 # take a list of numbers
 list3 = [10, 20, 30, 40, 50]
@@ -142,3 +156,4 @@ while i < len(list3):
     sum += list3[i] # add each element to sum
     i += 1
 print('Sum = ', sum)
+"""
