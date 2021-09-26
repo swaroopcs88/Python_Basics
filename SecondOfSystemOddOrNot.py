@@ -1,11 +1,12 @@
+# check whether the current second is odd or even based on the system time stamp
 from datetime import datetime
 import random
 import time
 
-
+# declare a variable odds
 odds = [1,2,3,4,9,11,23,13,42,34,53,44]
 
-
+# number of times you want to iterate over
 times = 5
 
 print('odds = '+str(odds))
