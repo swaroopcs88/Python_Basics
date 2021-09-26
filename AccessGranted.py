@@ -1,5 +1,5 @@
+# based on password access permissions
 name = 'Mary'
-
 password = 'swordfish'
 
 if name == 'Mary':
