@@ -1,4 +1,5 @@
-count = 0
+# check in given string contains vowels or not
+count = 0 
 vowels = 'aeiou'
 x = 'bed'
 
