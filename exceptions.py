@@ -115,9 +115,77 @@ else:
 
 """
 
+"""
 #ex9: A python program to handle IOError produced by open function
 # example for IOError
 # accept a filename
 try:
     name = input('Enter filename: ')
-    
+    f = open(name, 'r')
+
+except IOError:
+    print('File not found: ', name)
+
+else:
+    n = len(f.readlines())
+    print(name, 'has', n, 'lines')
+    f.close()
+"""
+
+"""
+# ex10: A python program to handle multiple exceptions
+# example for two exceptions
+# a function to find total and average of list elements
+
+def avg(list):
+    tot=0
+    for x in list:
+        tot+=x
+    avg = tot/len(list)
+    return tot, avg
+
+# call the avg and pass a list
+try:
+    t,a = avg([1,2,3,4,5,'a']) # here, give empty list and try
+    print('Total = {}, average= {}'.format(t,a))
+except TypeError:
+    print('Type Error, please provide numbers. ')
+except ZeroDivisionError:
+    print('ZeroDivisonError, please do not give empty list. ')
+"""
+
+
+"""
+#ex11: A python program to understand the usage of try and finally blocks
+# try without except block
+try:
+    x = int(input('Enter a number: '))
+    y = 1 / x
+finally:
+
+    print("we are not catching the exception.")
+print("The inverse is: ", y)
+"""
+
+"""
+#ex12: A python program using the assert statement and catching assertion error
+# handling AssertionError
+try:
+    x = int(input('Enter a number between 5 and 10: '))
+    assert x>= 5 and x <= 10
+    print('The number entered: ', x)
+except AssertionError:
+    print('The condition is not fulfilled')
+
+"""
+
+"""
+#ex13: A python program to use the assert statement with a message
+# handling AssertionError - v 2.0
+try:
+    x = int(input('Enter a number between 5 and 10: '))
+    assert x>= 5 and x<= 10, "Your input is not correct"
+    print('The number entered: ', x)
+except AssertionError as obj:
+    print(obj)
+"""
